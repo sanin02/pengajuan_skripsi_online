@@ -54,7 +54,7 @@
 						</a>
 					</li>
 
-					<li class="sidebar-item active">
+					<li class="sidebar-item">
 						<a class="sidebar-link" href="dosen-pengajuan.html">
 							<i class="align-middle" data-feather="book"></i> <span class="align-middle">Pengajuan Judul Skripsi</span>
 						</a>
@@ -70,7 +70,7 @@
 						</a>
 					</li>
 					
-					<li class="sidebar-item">
+					<li class="sidebar-item active">
 						<a class="sidebar-link" href="kajur-pengajuan.html">
 							<i class="align-middle" data-feather="book"></i> <span class="align-middle">Pengajuan Judul Skripsi</span>
 						</a>
@@ -116,65 +116,88 @@
 						<div class="col-12">
 							<div class="card">
 								<div class="card-header">
-									<h5 class="card-title mb-0">Data Pengajuan Judul Skripsi</h5>
+									<h5 class="card-title mb-0">Form Pengajuan Judul Skripsi</h5>
 								</div>
 								<div class="card-body">
-									<div class="table-responsive">
-										<table class="table table-sm">
-											<thead>
-												<tr>
-												<th scope="col">#</th>
-												<th scope="col">Nama Mahasiswa</th>
-												<th scope="col">NPM Mahasiswa</th>
-												<th scope="col">Waktu Pengajuan</th>
-												<th scope="col">Judul Skripsi</th>
-												<th scope="col">Status</th>
-												<th scope="col">Dosen Pembimbing 1</th>
-												<th scope="col">Dosen Pembimbing 2</th>
-												<th scope="col">Dosen Penguji 1</th>
-												<th scope="col">Dosen Penguji 2</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row">1</th>
-													<td>Sandri Setiyadi</td>
-													<td>19029002</td>
-													<td>26-06-2021 15:30</td>
-													<td>Sistem Informasi Pengolahan Data Nilai Siswa Berbasis Web Pada Sekolah Menengah Kejuruan (SMK)</td>
-													<td class="text-primary">Dalam Proses</td>
-													<td></td>
-													<td></td>
-													<td></td>
-													<td></td>
-												</tr>
-												<tr>
-													<th scope="row">2</th>
-													<td>Sandri Setiyadi</td>
-													<td>19029002</td>
-													<td>26-06-2021 15:30</td>
-													<td>Sistem Informasi Pengolahan Data Nilai Siswa Berbasis Web Pada Sekolah Menengah Kejuruan (SMK)</td>
-													<td class="text-success">Diterima</td>
-													<td>Sandri Setiyadi</td>
-													<td>Setiyadi Sandri</td>
-													<td>Sannin Sandri</td>
-													<td>Sannin Setiyadi</td>
-												</tr>
-												<tr>
-													<th scope="row">3</th>
-													<td>Sandri Setiyadi</td>
-													<td>19029002</td>
-													<td>26-06-2021 15:30</td>
-													<td>Sistem Informasi Pengolahan Data Nilai Siswa Berbasis Web Pada Sekolah Menengah Kejuruan (SMK)</td>
-													<td class="text-danger">Ditolak</td>
-													<td></td>
-													<td></td>
-													<td></td>
-													<td></td>
-												</tr>
-											</tbody>
-										</table>
+
+									<div class="mb-3">
+										<label class="form-label">Nama Mahasiswa</label>
+										<input type="text" class="form-control" placeholder="Nama Mahasiswa" value="Sandri Setiyadi" readonly>
 									</div>
+
+									<div class="mb-3">
+										<label class="form-label">NPM Mahasiswa</label>
+										<input type="text" class="form-control" placeholder="NPM Mahasiswa" value="19029002" readonly>
+									</div>
+
+									<div class="mb-3">
+										<label class="form-label">Waktu Pengajuan</label>
+										<input type="text" class="form-control" placeholder="Waktu Pengajuan" value="26-06-2021 15:30" readonly>
+									</div>
+
+									<div class="mb-3">
+										<label class="form-label">Judul Skripsi</label>
+										<input type="text" class="form-control" placeholder="Judul Skripsi" value="Sistem Informasi Pengolahan Data Nilai Siswa Berbasis Web Pada Sekolah Menengah Kejuruan (SMK)" readonly>
+									</div>
+
+									<div class="mb-3">
+										<label class="form-label">Status</label>
+										<select class="form-select mb-3">
+											<option selected>Dalam Proses</option>
+											<option>Diterima</option>
+											<option>Ditolak</option>
+										</select>
+									</div>
+
+									<div class="mb-3">
+										<label class="form-label">Dosen Pembimbing 1</label>
+										<select class="form-select mb-3">
+											<option selected>Sandri</option>
+											<option>Setiyadi</option>
+											<option>Sanin</option>
+											<option>Sanin08</option>
+										</select>
+									</div>
+									
+									<div class="mb-3">
+										<label class="form-label">Dosen Pembimbing 2</label>
+										<select class="form-select mb-3">
+											<option>Sandri</option>
+											<option selected>Setiyadi</option>
+											<option>Sanin</option>
+											<option>Sanin08</option>
+										</select>
+									</div>
+									
+									<div class="mb-3">
+										<label class="form-label">Dosen Penguji 1</label>
+										<select class="form-select mb-3">
+											<option>Sandri</option>
+											<option>Setiyadi</option>
+											<option selected>Sanin</option>
+											<option>Sanin08</option>
+										</select>
+									</div>
+									
+									<div class="mb-3">
+										<label class="form-label">Dosen Penguji 2</label>
+										<select class="form-select mb-3">
+											<option>Sandri</option>
+											<option>Setiyadi</option>
+											<option>Sanin</option>
+											<option selected>Sanin08</option>
+										</select>
+									</div>
+									
+									<div class="mb-3">
+										<a href="kajur-pengajuan.html">
+											<button type="button" class="btn btn-info">Kembali</button>
+										</a>
+										<a href="kajur-pengajuan.html">
+											<button type="button" class="btn btn-success">Simpan</button>
+										</a>
+									</div>
+
 								</div>
 							</div>
 						</div>
@@ -199,14 +222,6 @@
 	</div>
 
 	<script src="assets/adminkit/js/app.js"></script>
-
-	<script>
-		function actionHapus() {
-			if (confirm('Yakin Hapus ?')) {
-				alert('Berhasil Hapus');
-			}
-		}
-	</script>
 
 </body>
 

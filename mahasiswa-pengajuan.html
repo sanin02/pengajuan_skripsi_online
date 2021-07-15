@@ -23,7 +23,7 @@
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
-          <span class="align-middle">AdminKit</span>
+          <span class="align-middle">E-Skripsi</span>
         </a>
 
 				<ul class="sidebar-nav">
@@ -119,7 +119,9 @@
 									<h5 class="card-title mb-0">Data Pengajuan Judul Skripsi</h5>
 								</div>
 								<div class="card-body">
-									<button class="btn btn-success btn-sm">Tambah</button>
+									<a href="mahasiswa-pengajuan-form.html">
+										<button class="btn btn-success btn-sm">Tambah</button>
+									</a>
 									<br>
 									<br>
 									<div class="table-responsive">
@@ -148,8 +150,10 @@
 													<td></td>
 													<td></td>
 													<td>
-														<button class="btn btn-primary btn-sm">Ubah</button>								
-														<button class="btn btn-danger btn-sm">Hapus</button>								
+														<a href="mahasiswa-pengajuan-form.html">
+															<button class="btn btn-primary btn-sm">Ubah</button>								
+														</a>
+														<button onclick="actionHapus()" class="btn btn-danger btn-sm">Hapus</button>								
 													</td>
 												</tr>
 												<tr>
@@ -222,6 +226,14 @@
 	</div>
 
 	<script src="assets/adminkit/js/app.js"></script>
+
+	<script>
+		function actionHapus() {
+			if (confirm('Yakin Hapus ?')) {
+				alert('Berhasil Hapus');
+			}
+		}
+	</script>
 
 </body>
 
